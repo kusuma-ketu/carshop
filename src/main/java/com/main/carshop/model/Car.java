@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistene.Id;
 
 @Entity
-public class Entity {
+public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -15,10 +15,16 @@ public class Entity {
     private double price;
 }
 
-publc void setName(string name) {
+public Car(String name, String description, double price) {
+    this.name = name;
+    this.description = description;
+    this.price = price;
+}
+
+publc void setName(String name) {
     this.name = name;
 }
-public void setDescription(string description) {
+public void setDescription(String description) {
     this.description = description;
 }
 public void setPrice(int price) {
