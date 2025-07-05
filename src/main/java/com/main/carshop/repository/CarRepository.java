@@ -1,6 +1,7 @@
 package com.main.carshop.repository;
 
-import com.main.carshop.model.Car;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ProductRepository extends JpaRepository<Car, Long> {}
+import com.main.carshop.model.Car;
+
+public interface CarRepository extends JpaRepository<Car, Long> {}
